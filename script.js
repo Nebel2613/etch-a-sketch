@@ -17,6 +17,9 @@ function create(input) {
     pixel.classList.add("pixel");
     pixel.style.cssText = `width: ${SIZE}%; height : ${SIZE}%`;
     container.appendChild(pixel);
+    pixel.addEventListener("mouseenter", ()=>{
+        pixel.style.backgroundColor = "black";
+    })
 }
 }
 //event listener on button
